@@ -1,13 +1,14 @@
 {
   "name": "fix-pix",
-  "homepage": "https://fix-pix.vercel.app/",
+  "homepage": "http://John3107.github.io/fix-pix",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
     "core-js": "^3.25.3",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
+    "push-dir": "^0.4.1",
     "sass": "^1.55.0",
     "sass-loader": "^10.3.1"
   }
